@@ -1,0 +1,13 @@
+{ config, pkgs, inputs, ... }: 
+
+{
+  imports = [
+    inputs.spicetify-nix.homeManagerModules.default
+    ./modules/spicetify.nix
+  ];
+
+  home.username = "oni";
+  home.stateVersion = "26.05";
+  programs.home-manager.enable = true;
+  home.homeDirectory = "/home/oni";
+}

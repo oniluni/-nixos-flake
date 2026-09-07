@@ -1,0 +1,5 @@
+{ ... }:
+
+{
+    services.happ.enable = true;
+}
